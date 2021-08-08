@@ -9,9 +9,49 @@
   </head>
   <body>
     <div class="container">
-      <input type="radio" />
-      <button>Method 2</button>
-      <button>Method 3</button>
+      <a href="../index.html">Go back</a>
+      <h2>Calculate Area</h2>
+      <div class="inputs">
+        <input type="button" id="line-one" value="case 1" />
+        <label for="line-one">If you have base and height length</label>
+        <br />
+
+        <input type="button" id="line-two" value="case 2" />
+        <label for="line-two">If you have length of 3 sides</label>
+        <br />
+
+        <input type="button" id="line-three" value="case 3" />
+        <label for="line-three"
+          >If you have length of 2 sides and included angle</label
+        >
+      </div>
+      <div class="output" id="output">
+        <div class="case-first">
+          <label for="base">base</label>
+          <input type="number" id="base" />
+          <label for="height">height</label>
+          <input type="number" id="height" />
+          <button id="case-first-btn">Calculate</button>
+          <h2>Area will be Calculated by below formulae</h2>
+          <div class="area-output-one">Area = 1/2*base*height</div>
+        </div>
+        <div class="case-second">
+          <input type="number" id="side-a" placeholder="side a" />
+          <input type="number" id="side-b" placeholder="side b" />
+          <input type="number" id="side-c" placeholder="side c" />
+          <button id="case-second-btn">Calculate</button>
+          <h2>Area will be Calculated by below formulae</h2>
+          <div class="area-output-two">Area= √s(s-a)(s-b)(s-c)</div>
+        </div>
+        <div class="case-third">
+          <input type="number" id="sideB" placeholder="side b" />
+          <input type="number" id="sideC" placeholder="side c" />
+          <input type="number" id="angleA" placeholder="angle a" />
+          <button id="case-third-btn">Calculate</button>
+          <h2>Area will be Calculated by below formulae</h2>
+          <div class="area-output-three">Area= 1/2*b*c*sin(A)</div>
+        </div>
+      </div>
     </div>
     <script src="../js/calcAreaOfT.js"></script>
   </body>

@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url("./images/./b.png");
   height: 100vh;
   background-repeat: no-repeat;
@@ -25,4 +25,10 @@ a {
   margin: 5px;
   padding: 1rem;
   width: 50%;
+} */
+
+.case-first,
+.case-second,
+.case-third {
+  display: none;
 }
