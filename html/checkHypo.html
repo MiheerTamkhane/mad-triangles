@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="container">
-      <a href="../index.html">Go back</a>
+    <div class="hypotenus">
+      <a href="../index.html" class="go-back-btn">Go back</a>
       <h1>Check Hypotenus</h1>
       <p>Enter the lengths of sides of right angle triangle</p>
       <div class="inputs">
-        <label for="input-one">a = </label>
-        <input type="number" class="inputs" id="input-one" required />
-        <label for="input-two">b = </label>
-        <input type="number" class="inputs" id="input-two" required />
+        <input
+          type="number"
+          class="input"
+          id="input-one"
+          required
+          placeholder="∠A:"
+        />
+
+        <input
+          type="number"
+          class="input"
+          id="input-two"
+          required
+          placeholder="∠B:"
+        />
         <button id="button">Submit</button>
       </div>
 

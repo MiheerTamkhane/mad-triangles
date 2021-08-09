@@ -1,34 +1,173 @@
-/* body {
-  background-image: url("./images/./b.png");
-  height: 100vh;
-  background-repeat: no-repeat;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* front page styling below  */
+body {
+  /* height: 100vh; */
+  background-image: radial-gradient(
+    circle 1224px at 10.6% 8.8%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(153, 202, 251, 1) 100.2%
+  );
+  /* width: 70%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #003638;
+}
+a {
+  padding: 10px 0px 0px 0px;
+  text-decoration: none;
+  color: #003638;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 70%;
-  text-align: center;
-  border: 1px solid black;
+  margin: 2rem 0rem;
 }
 
-a {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 1rem;
-  width: 50%;
-} */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: 0.7rem 5rem;
+  padding: 1rem 0rem;
+  transition: all 0.3s ease-in;
+}
+.content:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
 .case-first,
 .case-second,
 .case-third {
   display: none;
+}
+img {
+  height: 60px;
+  display: block;
+}
+.go-back-btn {
+  margin: 2rem 0rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  border: 1px dotted #003638;
+  border-radius: 10px;
+}
+/* Area of triangle styling below  */
+.angle-of-triangle {
+  height: 100vh;
+  width: 70%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.angle-of-triangle p {
+  padding: 1.5rem 0rem;
+  font-size: 1.2rem;
+}
+.angle-of-triangle .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.angle-of-triangle .input {
+  margin: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #003638;
+  transition: all 0.3s ease-in-out;
+}
+.angle-of-triangle .input:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.angle-of-triangle button {
+  margin-top: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  background-color: #003638;
+  color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+.angle-of-triangle button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.angle-of-triangle p {
+  padding: 1.5rem 0rem;
+  font-size: 1.2rem;
+}
+
+/**************************************/
+.output {
+  margin-top: 1.2rem;
+  font-size: 1.7rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+/*************************************/
+/* Check Hypotenus styles are below  */
+.hypotenus {
+  height: 100vh;
+  width: 70%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.hypotenus h1 {
+  padding: 1rem 0rem;
+}
+.hypotenus .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.hypotenus .input {
+  margin: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #003638;
+  transition: all 0.3s ease-in-out;
+}
+.hypotenus .input:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.hypotenus button {
+  margin-top: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  background-color: #003638;
+  color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+.hypotenus button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
