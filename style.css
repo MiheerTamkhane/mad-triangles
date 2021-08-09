@@ -171,3 +171,98 @@ img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+/*Caculate area styles here below*/
+.area-of-triangle {
+  height: 150vh;
+  width: 70%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.area-of-triangle .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area-of-triangle h1 {
+  margin-top: 1rem;
+}
+.area-of-triangle .input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+  cursor: pointer;
+  background-color: #003638;
+  color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+.area-of-triangle .input:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.case-input {
+  margin: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #003638;
+  transition: all 0.3s ease-in-out;
+}
+.case-input:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#case-first-btn,
+#case-second-btn,
+#case-third-btn {
+  background-color: #003638;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.all-case-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form quiz styling below  */
+.quiz-container {
+  height: 250vh;
+  width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+.quiz label {
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+.questions {
+  padding: 1rem 0rem;
+}
+#submit-btn {
+  margin-top: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  background-color: #003638;
+  color: #f9f9f9;
+}
+#submit-btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

@@ -27,6 +27,12 @@ function quizHandler() {
     }
     index++;
   }
-  output.innerText = "Your final score is : " + score;
+  if (score === 0) {
+    output.innerText = "Your final score is : " + score;
+    output.style.backgroundColor = "#D9534F";
+  } else {
+    output.innerText = "Your final score is : " + score;
+    output.style.backgroundColor = "#5CB85C";
+  }
 }
 button.addEventListener("click", quizHandler);

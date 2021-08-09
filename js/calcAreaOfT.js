@@ -11,9 +11,13 @@ const caseThirdBtn = document.querySelector("#case-third-btn");
 
 //Case first function below
 function buttonOneClickHandler() {
-  displayFirst.style.display = "block";
+  displayFirst.style.display = "flex";
+  displayFirst.classList.add("all-case-center");
+  displayThird.classList.remove("all-case-center");
   displaySecond.style.display = "";
   displayThird.style.display = "";
+
+  displaySecond.classList.remove("all-case-center");
 }
 
 function calcAreaCaseFirst() {
@@ -23,15 +27,20 @@ function calcAreaCaseFirst() {
   let area = (1 / 2) * base * height;
   if (!area) {
     outputOne.innerHTML = `<p>Please fill up fields</p>`;
+    outputOne.style.backgroundColor = "#D9534F";
   } else {
     outputOne.innerHTML = `<p>Area = ${area}</p>`;
+    outputOne.style.backgroundColor = "#5CB85C";
   }
 }
 caseFirstBtn.addEventListener("click", calcAreaCaseFirst);
 //Case second function below
 function buttonTwoClickHandler() {
   displayFirst.style.display = "";
-  displaySecond.style.display = "block";
+  displaySecond.style.display = "flex";
+  displaySecond.classList.add("all-case-center");
+  displayFirst.classList.remove("all-case-center");
+  displayThird.classList.remove("all-case-center");
   displayThird.style.display = "";
 }
 
@@ -45,8 +54,10 @@ function calcAreaCaseSecond() {
   // outputTwo.innerHTML = `<p>Area = ${area}</p>`;
   if (!area) {
     outputTwo.innerHTML = `<p>Please fill up fields</p>`;
+    outputTwo.style.backgroundColor = "#D9534F";
   } else {
     outputTwo.innerHTML = `<p>Area = ${area}</p>`;
+    outputTwo.style.backgroundColor = "#5CB85C";
   }
 }
 caseSecondtBtn.addEventListener("click", calcAreaCaseSecond);
@@ -54,7 +65,10 @@ caseSecondtBtn.addEventListener("click", calcAreaCaseSecond);
 function buttonThreeClickHandler() {
   displayFirst.style.display = "";
   displaySecond.style.display = "";
-  displayThird.style.display = "block";
+  displayThird.style.display = "flex";
+  displayThird.classList.add("all-case-center");
+  displaySecond.classList.remove("all-case-center");
+  displayFirst.classList.remove("all-case-center");
 }
 function calcAreaCaseThird() {
   const outputThird = document.querySelector(".area-output-three");
@@ -67,8 +81,10 @@ function calcAreaCaseThird() {
   outputThird.innerHTML = `<p>Area = ${area}</p>`;
   if (!area) {
     outputThird.innerHTML = `<p>Please fill up fields</p>`;
+    outputThird.style.backgroundColor = "#D9534F";
   } else {
     outputThird.innerHTML = `<p>Area = ${area}</p>`;
+    outputThird.style.backgroundColor = "#5CB85C";
   }
 }
 caseThirdBtn.addEventListener("click", calcAreaCaseThird);

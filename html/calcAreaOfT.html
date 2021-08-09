@@ -8,48 +8,97 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="area-of-triangle">
       <a href="../index.html" class="go-back-btn">Go back</a>
-      <h2>Calculate Area</h2>
+      <h1>Calculate Area</h1>
       <div class="inputs">
-        <input type="button" id="line-one" value="case 1" />
-        <label for="line-one">If you have base and height length</label>
-        <br />
+        <input
+          type="button"
+          id="line-one"
+          class="input"
+          value="> If you have base and height length"
+        />
 
-        <input type="button" id="line-two" value="case 2" />
-        <label for="line-two">If you have length of 3 sides</label>
-        <br />
+        <input
+          type="button"
+          id="line-two"
+          class="input"
+          value="> If you have length of 3 sides "
+        />
 
-        <input type="button" id="line-three" value="case 3" />
-        <label for="line-three"
-          >If you have length of 2 sides and included angle</label
-        >
+        <input
+          type="button"
+          id="line-three"
+          class="input"
+          value="> If you have length of 2 sides included angle"
+        />
       </div>
       <div class="output" id="output">
         <div class="case-first">
-          <label for="base">base</label>
-          <input type="number" id="base" />
-          <label for="height">height</label>
-          <input type="number" id="height" />
-          <button id="case-first-btn">Calculate</button>
-          <h2>Area will be Calculated by below formulae</h2>
-          <div class="area-output-one">Area = 1/2*base*height</div>
+          <input
+            type="number"
+            id="base"
+            class="case-input"
+            placeholder="Base"
+          />
+          <input
+            type="number"
+            id="height"
+            class="case-input"
+            placeholder="Height"
+          />
+          <button id="case-first-btn" class="go-back-btn">Calculate</button>
+          <p>Area will be Calculated by below formula</p>
+          <p>Area = 1/2*base*height</p>
+          <div class="area-output-one output"></div>
         </div>
         <div class="case-second">
-          <input type="number" id="side-a" placeholder="side a" />
-          <input type="number" id="side-b" placeholder="side b" />
-          <input type="number" id="side-c" placeholder="side c" />
-          <button id="case-second-btn">Calculate</button>
-          <h2>Area will be Calculated by below formulae</h2>
-          <div class="area-output-two">Area= √s(s-a)(s-b)(s-c)</div>
+          <input
+            type="number"
+            id="side-a"
+            class="case-input"
+            placeholder="Side-A"
+          />
+          <input
+            type="number"
+            id="side-b"
+            class="case-input"
+            placeholder="Side-B"
+          />
+          <input
+            type="number"
+            id="side-c"
+            class="case-input"
+            placeholder="Side-C"
+          />
+          <button id="case-second-btn" class="go-back-btn">Calculate</button>
+          <p>Area will be Calculated by below formula</p>
+          <p>Area= √s(s-a)(s-b)(s-c)</p>
+          <div class="area-output-two output"></div>
         </div>
         <div class="case-third">
-          <input type="number" id="sideB" placeholder="side b" />
-          <input type="number" id="sideC" placeholder="side c" />
-          <input type="number" id="angleA" placeholder="angle a" />
-          <button id="case-third-btn">Calculate</button>
-          <h2>Area will be Calculated by below formulae</h2>
-          <div class="area-output-three">Area= 1/2*b*c*sin(A)</div>
+          <input
+            type="number"
+            id="sideB"
+            class="case-input"
+            placeholder="Side-B"
+          />
+          <input
+            type="number"
+            id="sideC"
+            class="case-input"
+            placeholder="Side-C"
+          />
+          <input
+            type="number"
+            id="angleA"
+            class="case-input"
+            placeholder="∠A:"
+          />
+          <button id="case-third-btn" class="go-back-btn">Calculate</button>
+          <p>Area will be Calculated by below formula</p>
+          <p>Area= 1/2*b*c*sin(A)</p>
+          <div class="area-output-three output"></div>
         </div>
       </div>
     </div>

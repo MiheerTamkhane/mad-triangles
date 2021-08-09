@@ -8,193 +8,216 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <a href="../index.html" class="go-back-btn">Go back</a>
-    <form class="quiz" id="quiz">
-      <div class="questions">
-        <p>1. This type of triangle has one 90 degree angle?</p>
-        <label
-          ><input type="radio" value="acute" name="question1" />acute</label
-        >
-        <label
-          ><input type="radio" value="right" name="question1" />right</label
-        >
-        <label
-          ><input type="radio" value="obtuse" name="question1" />obtuse</label
-        >
-      </div>
-      <div class="questions">
-        <p>2. A triangle where all sides are congruent is called?</p>
-        <label
-          ><input type="radio" value="scalene" name="question2" />scalene</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="isosceles"
-            name="question2"
-          />isosceles</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="equilateral"
-            name="question2"
-          />equilateral</label
-        >
-      </div>
-      <div class="questions">
-        <p>3. All 3 interior angles of a triangle add up to?</p>
-        <label
-          ><input type="radio" value="" name="question3" />90 degrees</label
-        >
-        <label
-          ><input type="radio" value="180 degrees" name="question3" />180
-          degrees</label
-        >
-        <label
-          ><input type="radio" value="360 degrees" name="question3" />360
-          degrees</label
-        >
-      </div>
-      <div class="questions">
-        <p>4. What is a triangle called if all its angles are acute angles?</p>
-        <label
-          ><input type="radio" value="acute angled triangle" name="question4" />
-          acute angled triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="oblique triangle"
-            name="question4"
-          />oblique triangle</label
-        >
-        <label
-          ><input type="radio" value="golden triangle" name="question4" />golden
-          triangle</label
-        >
-      </div>
-      <div class="questions">
-        <p>
-          5. What is a triangle called if lengths of all three sides are equal?
-        </p>
-        <label
-          ><input type="radio" value="equilateral triangle" name="question5" />
-          equilateral triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="bilateral triangle"
-            name="question5"
-          />bilateral triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="multilateral triangle"
-            name="question5"
-          />multilateral triangle</label
-        >
-      </div>
-      <div class="questions">
-        <p>
-          6. What is a triangle with all three sides of different lengths
-          called?
-        </p>
-        <label
-          ><input type="radio" value="integer triangle" name="question6" />
-          integer triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="scalene triangle"
-            name="question6"
-          />scalene triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="Brocard triangle"
-            name="question6"
-          />Brocard triangle</label
-        >
-      </div>
-      <div class="questions">
-        <p>
-          7. What is the type of triangle if in ∆ ABC, seg AB and seg BC have
-          equal lengths?
-        </p>
-        <label
-          ><input type="radio" value="Kobon triangle" name="question7" /> Kobon
-          triangle</label
-        >
-        <label
-          ><input type="radio" value="spiral triangle" name="question7" />spiral
-          triangle</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="isosceles triangle"
-            name="question7"
-          />isosceles triangle</label
-        >
-      </div>
-      <div class="questions">
-        <p>8. Which ancient Greek philosopher studied triangles?</p>
-        <label
-          ><input type="radio" value="plato" name="question8" /> plato</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="socrates"
-            name="question8"
-          />socrates</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="pythagoras"
-            name="question8"
-          />pythagoras</label
-        >
-      </div>
-      <div class="questions">
-        <p>9. Complete this right angle equation: a2 + b2 =?</p>
-        <label><input type="radio" value="c2" name="question9" />c2</label>
-        <label><input type="radio" value="d2" name="question9" />d2</label>
-        <label><input type="radio" value="ab2" name="question9" />ab2</label>
-      </div>
-      <div class="questions">
-        <p>
-          10. What's the name of the type of maths that studies the sides and
-          angles of triangles?
-        </p>
-        <label
-          ><input type="radio" value="geometry" name="question10" />
-          geometry</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="triology"
-            name="question10"
-          />triology</label
-        >
-        <label
-          ><input
-            type="radio"
-            value="trigonomtry"
-            name="question10"
-          />trigonomtry</label
-        >
-      </div>
-    </form>
-    <button id="submit-btn">Submit Answers</button>
-    <div class="output" id="output"></div>
+    <div class="quiz-container">
+      <a href="../index.html" class="go-back-btn">Go back</a>
+      <form class="quiz" id="quiz">
+        <div class="questions">
+          <p>1. This type of triangle has one 90 degree angle?</p>
+          <label
+            ><input type="radio" value="acute" name="question1" />acute</label
+          >
+          <label
+            ><input type="radio" value="right" name="question1" />right</label
+          >
+          <label
+            ><input type="radio" value="obtuse" name="question1" />obtuse</label
+          >
+        </div>
+        <div class="questions">
+          <p>2. A triangle where all sides are congruent is called?</p>
+          <label
+            ><input
+              type="radio"
+              value="scalene"
+              name="question2"
+            />scalene</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="isosceles"
+              name="question2"
+            />isosceles</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="equilateral"
+              name="question2"
+            />equilateral</label
+          >
+        </div>
+        <div class="questions">
+          <p>3. All 3 interior angles of a triangle add up to?</p>
+          <label
+            ><input type="radio" value="" name="question3" />90 degrees</label
+          >
+          <label
+            ><input type="radio" value="180 degrees" name="question3" />180
+            degrees</label
+          >
+          <label
+            ><input type="radio" value="360 degrees" name="question3" />360
+            degrees</label
+          >
+        </div>
+        <div class="questions">
+          <p>
+            4. What is a triangle called if all its angles are acute angles?
+          </p>
+          <label
+            ><input
+              type="radio"
+              value="acute angled triangle"
+              name="question4"
+            />
+            acute angled triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="oblique triangle"
+              name="question4"
+            />oblique triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="golden triangle"
+              name="question4"
+            />golden triangle</label
+          >
+        </div>
+        <div class="questions">
+          <p>
+            5. What is a triangle called if lengths of all three sides are
+            equal?
+          </p>
+          <label
+            ><input
+              type="radio"
+              value="equilateral triangle"
+              name="question5"
+            />
+            equilateral triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="bilateral triangle"
+              name="question5"
+            />bilateral triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="multilateral triangle"
+              name="question5"
+            />multilateral triangle</label
+          >
+        </div>
+        <div class="questions">
+          <p>
+            6. What is a triangle with all three sides of different lengths
+            called?
+          </p>
+          <label
+            ><input type="radio" value="integer triangle" name="question6" />
+            integer triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="scalene triangle"
+              name="question6"
+            />scalene triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="Brocard triangle"
+              name="question6"
+            />Brocard triangle</label
+          >
+        </div>
+        <div class="questions">
+          <p>
+            7. What is the type of triangle if in ∆ ABC, seg AB and seg BC have
+            equal lengths?
+          </p>
+          <label
+            ><input type="radio" value="Kobon triangle" name="question7" />
+            Kobon triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="spiral triangle"
+              name="question7"
+            />spiral triangle</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="isosceles triangle"
+              name="question7"
+            />isosceles triangle</label
+          >
+        </div>
+        <div class="questions">
+          <p>8. Which ancient Greek philosopher studied triangles?</p>
+          <label
+            ><input type="radio" value="plato" name="question8" /> plato</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="socrates"
+              name="question8"
+            />socrates</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="pythagoras"
+              name="question8"
+            />pythagoras</label
+          >
+        </div>
+        <div class="questions">
+          <p>9. Complete this right angle equation: a2 + b2 =?</p>
+          <label><input type="radio" value="c2" name="question9" />c2</label>
+          <label><input type="radio" value="d2" name="question9" />d2</label>
+          <label><input type="radio" value="ab2" name="question9" />ab2</label>
+        </div>
+        <div class="questions">
+          <p>
+            10. What's the name of the type of maths that studies the sides and
+            angles of triangles?
+          </p>
+          <label
+            ><input type="radio" value="geometry" name="question10" />
+            geometry</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="triology"
+              name="question10"
+            />triology</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="trigonomtry"
+              name="question10"
+            />trigonomtry</label
+          >
+        </div>
+      </form>
+      <button id="submit-btn">Submit Answers</button>
+      <div class="output" id="output"></div>
+    </div>
     <script src="../js/quizOnT.js"></script>
   </body>
 </html>
