@@ -8,7 +8,7 @@
 body {
   /* height: 100vh; */
   background-image: radial-gradient(
-    circle 1224px at 10.6% 8.8%,
+    circle 700px at 10.6% 8.8%,
     rgba(255, 255, 255, 1) 0%,
     rgba(153, 202, 251, 1) 100.2%
   );
@@ -244,23 +244,36 @@ img {
 
 /* Form quiz styling below  */
 .quiz-container {
-  height: 250vh;
-  width: 80%;
-  text-align: center;
+  /* height: 250vh; */
+  text-align: start;
+  width: 600px;
+  margin: auto;
+  padding: 2rem 1rem;
+  /* text-align: center; */
   font-size: 1.3rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .quiz label {
+  padding: 0.5rem;
+  padding-left: 0%;
   margin: 1rem 0rem;
+  margin-left: 0rem;
   cursor: pointer;
 }
 .questions {
   padding: 1rem 0rem;
+  padding-left: 0.5rem;
+  /* border: 1px solid black; */
+  margin: 1rem 0rem;
+  background-color: rgb(196, 225, 255);
+}
+.questions p {
+  padding-bottom: 0.5rem;
 }
 #submit-btn {
   margin-top: 20px;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -268,6 +281,7 @@ img {
   cursor: pointer;
   background-color: #003638;
   color: #f9f9f9;
+  transition: all 0.3s ease-in;
 }
 #submit-btn:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
